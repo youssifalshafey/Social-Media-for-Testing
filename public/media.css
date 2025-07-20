@@ -1,0 +1,461 @@
+@media screen and (max-width: 720px) {
+    .row .ferst-tt h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .row .ferst-tt p {
+        font-size: 1.2rem;
+    }
+
+    .navbar .navbar-brand {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 9099px) {
+    .navbar .navbar-brand {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 999px) {
+    .row .ferst-tt h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .row .ferst-tt p {
+        font-size: 1.2rem;
+    }
+}
+
+/* card */
+
+@media screen and (max-width: 720px) {
+    .row .cards h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .row .cards p {
+        font-size: 1.2rem;
+    }
+    .row .cards {
+        padding: 2rem 1rem;
+        /* margin: 0 1rem; */
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 999px) {
+    .row .cards h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .row .cards p {
+        font-size: 1.2rem;
+    }
+}
+
+/* text */
+@media screen and (max-width: 600px) {
+    .text .text--up h2 {
+        font-size: 2rem;
+        /* padding: 1rem 0; */
+    }
+    .text .text--up p {
+        font-size: 1.2rem;
+    }
+    .text .text--up button {
+        width: 100%;
+    }
+}
+
+/* nubers */
+
+@media screen and (max-width: 600px) {
+    .num---up .num--text h3 {
+        font-size: 1.8rem;
+        /* padding: 1rem 0; */
+    }
+    .num---up .num--text h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 404 */
+
+@media screen and (max-width: 700px) {
+    .for-text {
+        text-align: center;
+    }
+    .for-text button {
+        width: 100%;
+    }
+}
+
+/* text */
+@media screen and (max-width: 600px) {
+    .text .text--up h2 {
+        font-size: 2rem;
+        /* padding: 1rem 0; */
+    }
+    .text .text--up p {
+        font-size: 1.2rem;
+    }
+    .text .text--up button {
+        width: 100%;
+    }
+}
+
+/* nubers */
+
+@media screen and (max-width: 600px) {
+    .num---up .num--text h3 {
+        font-size: 1.8rem;
+        /* padding: 1rem 0; */
+    }
+    .num---up .num--text h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 404 */
+
+@media screen and (max-width: 700px) {
+    .for-text {
+        text-align: center;
+    }
+    .for-text button {
+        width: 100%;
+    }
+}
+
+/*  */
+
+/* about */
+@media screen and (max-width: 700px) {
+    body .sl {
+        padding: 8rem 0rem;
+    }
+
+    body .sl h2 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row .light--text h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .row .light--text p {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 999px) {
+    .row .light--text h2 {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    .row .light--text p {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+/*  */
+@media screen and (max-width: 900px) {
+    .row .all--tow {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .gread--img--text .poseation h2 {
+        font-size: 2rem;
+    }
+    .gread--img--text .poseation p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 999px) {
+    .row .food--text h2 {
+        font-size: 1.5rem;
+    }
+
+    .row .food--text p {
+        font-size: 1rem;
+    }
+}
+
+/* footer */
+
+@media screen and (max-width: 760px) {
+    .row .pages li h3 {
+        text-align: left;
+    }
+    .logos h2 {
+        font-size: 2rem;
+    }
+    .logos p {
+        font-size: 1rem;
+    }
+    .keep li h3 {
+        font-size: 1.2rem;
+    }
+    .loly {
+        gap: 2rem;
+    }
+    .any h4 {
+        font-size: 1rem;
+    }
+}
+
+/*  */
+
+@media screen and (max-width: 750px) {
+    .fixed-f {
+        display: none;
+    }
+    body .row .data-f {
+        /* margin-left: 0; */
+        margin: 0 1rem;
+    }
+
+    body #data {
+        /* width: 100%; */
+        /* margin: 0; */
+        /* padding: 2rem 1rem; */
+    }
+    body .dd-heden {
+        display: inline-block;
+    }
+    .te--tow {
+        margin: 1rem 0;
+    }
+}
+
+/* about */
+
+@media screen and (max-width: 760px) {
+    .abou-flx {
+        flex-direction: column-reverse;
+    }
+    .row .about-text h2 {
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width: 990px) {
+    .row .about-text h2 {
+        font-size: 2rem;
+    }
+    .row .about-text p {
+        font-size: 1rem;
+    }
+}
+
+/*  */
+@media screen and (max-width: 650px) {
+    body .ab---text h2 {
+        font-size: 2.3rem;
+    }
+    body .kfkfkfkfkfkf {
+        font-size: 2rem;
+    }
+
+    body .te--tow button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 990px) {
+    .learning-img {
+        display: none;
+    }
+
+    body .te--tow h2 {
+        font-size: 1rem;
+    }
+    body .te--tow p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body .lirning-text h4 {
+        font-size: 2rem;
+    }
+    body .liraning-cord h3 {
+        font-size: 2rem;
+    }
+    body .liraning-cord h4 {
+        font-size: 1.3rem;
+    }
+    body .learning-img {
+        margin-top: 1rem;
+    }
+
+    .ferst-tt {
+        padding: 0 1rem;
+        margin: 1rem 0;
+    }
+    .ferst-tt button {
+        width: 100%;
+    }
+    .margen {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .lojec-up .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .lojec-up h2 {
+        font-size: 1.5rem;
+    }
+    .lojec h3 {
+        font-size: 1.5rem;
+    }
+    .lojec-up button {
+        margin: 1rem 0.2rem;
+    }
+    .row #imgg {
+        transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body .pro-f-img img {
+        transform: rotate(0);
+    }
+    body .pro-f-img .pro-postion p {
+        /* position: absolute; */
+        left: 10%;
+        top: 10%;
+    }
+
+    body .row .pro-f-text h2 {
+        font-size: 1.5rem;
+    }
+    body .row .pro-f-text p {
+        font-size: 1rem;
+    }
+    body .pro-f-text p {
+        font-size: 1.2rem;
+    }
+
+    body .pro-f-text h2 {
+        font-size: 1.8rem;
+    }
+
+    body .pro-postion p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body .buttons-tow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body .buttons-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    body .buttons-btn .cord-btn h2 {
+        font-size: 1rem;
+    }
+
+    body .buttons-btn .cord-btn p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body .div----hiden {
+        display: block;
+    }
+    body .bfgh .btn----hid {
+        display: block;
+    }
+
+    .btns-links {
+        display: none;
+    }
+    body .data--page {
+        padding-left: 1rem;
+    }
+}
+@media (max-width: 1023px) {
+    #data{
+        padding-left: 8.5rem;
+    }
+    .popup{
+        height: 74%;
+        margin-top: 4rem;
+    }
+
+}
+@media (max-width:641px){
+    #data{
+        width: 97%;
+        padding: 0 1rem 0rem 11rem;
+    }
+    .popup{
+        height: 50%;
+    }
+    
+}
+
+    /* .popup{
+        margin-left: -7rem;
+        margin-right: 1rem;
+        padding-top: 9rem;
+        
+        margin-top: -5rem;
+        width: 138%;
+        height: 81%;
+        padding-bottom: 3rem
+    } */
+    
+
+/* @media (max-width: 1019px){
+    .popup-content{
+        height: 37rem;
+
+    }
+    .popup{
+        padding: 2rem;
+        
+    }
+    .cal {
+        display: block;
+        width: 7rem;
+    }
+} */
+
+
+    /* .popup-content{
+        height: 45%; 
+        width: 40%;
+        margin: 25% auto; 
+        padding: 8px;  
+        display: flex;
+            flex-direction: column;
+            width: 54%;
+            margin: 18% auto;
+            padding: 3px;
+    }
+} */
+/* @media (max-width:486px){
+body   #data{
+    padding-left: 0.2rem;
+    width: 15rem;
+} 
+    .image-list{
+    width: 13rem; 
+}*/

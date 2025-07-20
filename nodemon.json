@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "./saves",
+        "./public",
+        "./received",
+        "./messages"
+    ]
+}

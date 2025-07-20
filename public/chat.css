@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, sans-serif;
+}
+body {
+    /* background: rgba(0, 0, 0, 0.619) */
+    /* background: linear-gradient(to top, #000000, #86b7fe14), url("imgs/ho (6).jpg") no-repeat center center fixed; */
+    
+background-size: cover;
+}
+
+/* Styling for new-value element */
+
+#new-Value {
+    color: #f0f0f0;
+    background-color: #5a5151;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for user input field */
+.input-user {
+    background-color: #DCF8C6;
+    background-color: inherit;
+    border: .1rem solid #f0f0f0;
+    border-radius: 2rem;
+    text-align: center;
+    padding: .3rem 0;
+    color: #000000;
+}
+
+
+
+/* Styling for send button */
+.home-pearant .send-Value {
+
+    font-size: 1.4rem;
+    /* color: #f0f0f0;
+    background-color: #DCF8C6; */
+    border: none;
+}
+
+
+
+/* Styling for form */
+
+.chat--up {
+    width: 100%;
+
+}
+ 
+#countiner {
+font-weight: 1000 !important;
+    background: #ffffff;
+    height: 75vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    /* right: 11%; */
+    width: 80%;
+    bottom: 56px;
+    /* color: white; */
+    margin: 45px auto;
+    backdrop-filter: blur(21px);
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* Flex properties for message items */
+
+/* Styling for own message (me) */
+#me {
+    background-color: #DCF8C6;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 10px;
+    margin-left: auto;
+    /* box-shadow: 1px 1px 6px 1px white; */
+}
+
+/* Styling for other person’s message */
+#other {
+   display: flex
+;
+    background-color: rgba(114, 118, 139, .16);
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 200px;
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 10px;
+    margin-right: auto;
+    color: #1a1a1a;
+    box-shadow: 1px 1px 9px 1px #ffffff;
+    row-gap: 10px;
+}
+
+
+
+
+
+.welcome {
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-align: center;
+    background-color: #25d366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.massageYou {
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.massage {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+#connect {
+    display: flex;
+    justify-content: center;
+    color: var(--bs-gray-100);
+    font-size: 19px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#disconnect {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.btns-link {
+    position: fixed;
+    top: 17%;
+    left: 2%;
+}
+
+.chat--up {
+    position: relative;
+}
+
+.home-pearant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    left: 0%;
+}
+
+/*  */
+
+.chat-pearant {
+  display: grid
+;
+    align-items: center;
+    padding-top: 1rem;
+    position: absolute;
+    bottom: 0px;
+    right: 9.9%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #EDEDED;
+    border-radius: 15px;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.chat-pearant input {
+background-color: inherit;
+    padding: .5rem 0;
+    text-align: center;
+    width: 100%;
+    border: .1rem solid #CCCCCC;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.chat-pearant button {
+   height: 50px;
+    width: 50px;
+    background-color: #25D366;
+    font-size: 1.4rem;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+/* lib */
+
+
+.btn--library {
+    padding: .4rem .7rem;
+    font-family: "DynaPuff", system-ui;
+    color: #39cccc;
+    ;
+    background-color: inherit;
+    border: .1rem solid #39cccc;
+    ;
+    ;
+    border-radius: 2rem;
+    transition: 500ms;
+    text-transform: uppercase;
+    position: fixed;
+    top: 8rem;
+    left: .5rem;
+}
+
+.btn--library:hover {
+    background-color: #39cccc;
+    ;
+    ;
+    color: white;
+    letter-spacing: .1rem;
+
+}
+
+body .library--popap {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.library {
+    background: #110d0d4f;
+    height: 80vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 17%;
+    right: 2%;
+}
+
+.library button {
+    background-color: inherit;
+    border: .1rem solid #018792;
+    ;
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+    transition: 500ms;
+    font-family: "Permanent Marker", cursive;
+    width: 100%;
+    margin: 1rem 0;
+    color: #018792;
+}
+
+#lists {
+    position: fixed;
+    top: 17%;
+    right: 2%;
+    width: 5rem;
+}
+
+.lib-inher {
+    display: block;
+
+}
+
+/*  */
+.flex--list {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.style--inp {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#data input {
+    width: 90%;
+    padding: .2rem 1rem;
+    letter-spacing: .1rem;
+}
+
+.darkmode #countiner{
+    box-shadow: inset 1px 1px 4px 5px #25d366;
+    color: white;
+    background-color: unset;
+  }
+  .message-container {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reply-btn {
+       background: #018792;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 3px;
+    color: white;
+}
+
+.reply-btn:hover {
+    background: #018792b5;
+}
+
+.reply-reference {
+    background: #f5f5f5;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border-left: 3px solid #007bff;
+    cursor: pointer;
+}
+
+.reply-reference:hover {
+    background: #ececec;
+}
+
+#reply-indicator {
+background: #e9ecef;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    grid-column: 1 / 3;
+}
+
+#reply-indicator button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+.message{
+word-break: break-word;
+}

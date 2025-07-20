@@ -1,0 +1,56 @@
+:root{
+    --base-color: #38a1a1;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+  }
+  .darkmode{
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-family: Poppins;
+  }
+  .darkmode{
+    background-color: var(--base-color);
+  }
+  .darkmode .post{
+    background: linear-gradient(45deg, #25d36654, #19875457);}
+
+
+  .cta-button{
+    background-color: var(--accent-color);
+  }
+  
+  #theme-switch svg:last-child{
+    display: none;
+  }
+  .darkmode #theme-switch svg:first-child{
+    display: none;
+  }
+  .darkmode #theme-switch svg:last-child{
+    display: block;
+  }
+
+.darkmode .left,.darkmode .left .button-49::before,.darkmode .left .button-49::after
+{
+background-color: #070b1d !important;  
+}
+
+.darkmode .post,.darkmode .post i{
+  color: rgb(255, 255, 255);
+}
+
+ .offcanvas-header h5{
+  color: rgb(255, 255, 255) !important;
+}

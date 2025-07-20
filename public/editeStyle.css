@@ -1,0 +1,110 @@
+body .posts--page #data h1 ,body .posts--page #data h2 ,body .posts--page #data h3,body .posts--page #data p {
+  /* color: #d4d4d4; */
+  font-family: "Baloo Paaji 2", serif;
+/* color:  #ffffffc7 !important; */
+/* color: black; */
+}
+body .posts--page #data input{
+    background-color: inherit;
+    border: .1rem solid   #018792;;;
+  color:  #018792 !important;
+  font-family: "Baloo Paaji 2", serif;
+
+}
+.send{
+  font-family: "Baloo Paaji 2", serif !important;
+
+}
+.offcanvas-header h5{
+  font-family: "Baloo Paaji 2", serif !important;
+text-transform: uppercase;
+}
+.img---logo-school{
+  width: 70px;
+}
+body .mahmoud{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* justify-content: space-around; */
+}
+.popup-content{
+  /* background-color: #018792; */
+  padding: 1rem;
+}
+#popup h2 , #popup p{
+  font-family: "Baloo Paaji 2", serif !important;
+  text-transform: capitalize;
+
+}
+.popup-profile-image{
+  display: flex;
+  justify-content: center;
+  border-radius: 50rem;
+
+  width: 20%;
+}
+
+#sendButton1 {
+  background-color: #39cccc;
+  padding: 0.4rem 2rem;
+  font-family: "Lemonada";
+  font-size: 1.2rem;
+  /* font-weight: 900; */
+  color: #989999a4;
+  border: 0.1rem solid #39cccc;
+  border-radius: 0.5rem;
+
+  color: white;
+  transition: 500ms;
+  font-family: "DynaPuff", system-ui;
+  width: 100%;
+  /* color:  #ffffffc7 !important; */
+  /* font-family: "Baloo Paaji 2", serif !important; */
+text-transform: uppercase;
+letter-spacing: .5rem;
+font-family: "DynaPuff", system-ui;
+
+}
+
+#sendButton1:hover {
+  background-color: inherit;
+  ;
+  color: #39cccc;;
+  letter-spacing: 1rem;
+  /* border: none; */
+}
+.change-bio{
+  padding: 0.4rem 2rem;
+  font-family: "Lemonada";
+  font-size: 1.2rem;
+  /* font-weight: 900; */
+  color: #989999a4;
+  border: 0.1rem solid ;
+  border-radius: 0.5rem;
+margin: 1rem 0;
+  color: white;
+  transition: 500ms;
+  font-family: "DynaPuff", system-ui;
+  width: 100%;
+  /* color:  #ffffffc7 !important; */
+  /* font-family: "Baloo Paaji 2", serif !important; */
+text-transform: uppercase;
+letter-spacing: .5rem;
+font-family: "DynaPuff", system-ui;
+}
+.modal-title {
+  font-family: "Baloo Paaji 2", serif !important;
+  font-size: 3rem;
+
+}
+/* body{
+  background: linear-gradient(to left , rgb(126, 213,111, 0.8),rgb(40, 180, 0.8))
+} */
+
+
+.hoday{
+  display: flex;
+  align-items: center !important;
+}
+

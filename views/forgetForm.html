@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="lib/New folder/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Forget.css">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="lib/New folder/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/fontawesome-free-6.4.2-web/css/all.min.css"> -->
+  
+  <!--  -->
+
+    <link rel="stylesheet" href="lib/font/Baloo_Paaji_2/BalooPaaji2-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="lib/font/DynaPuff/DynaPuff-VariableFont_wdth,wght.ttf">
+    <link rel="stylesheet" href="lib/font/Saira/Saira-VariableFont_wdth,wght.ttf">
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <div class="container posaa col-12 col-sm-10 col-md-6 col-lg-5 col-xl-6">
+        <form action="#" id="forgetForm" class="form-box">
+            <h2 class="form-title">Forgot Password</h2>
+            <div class="input-group">
+                <input class="" type="email" required id="emailInput" placeholder="Your Email Address">
+                <label for="emailInput" id="error">Enter Your Email</label>
+            </div>
+            <button class="btn-seen" type="submit" ><p>Send Email</p></button>
+            
+            <div class="register-link">
+                <p>Back to <a href="/login">Login</a></p>
+            </div>
+        </form>
+        <div id="backToLogin" class="success-box" style="display: none;">
+            <h1>Email Sent Successfully!</h1>
+            <p>Please check your inbox to reset your password.</p>
+            <button  onclick="window.location.href = '/login'">Back to Login</button>
+
+        </div>
+      
+
+    </div>
+    
+
+
+    <script>
+        const forgetForm = document.getElementById("forgetForm");
+        const emailInput = document.getElementById("emailInput");
+        const errorHolder = document.getElementById("error");
+        const backToLogin = document.getElementById("backToLogin");
+
+        forgetForm.onsubmit = (ev) => {
+            ev.preventDefault()
+            fetch("/api/forget", {
+                credentials: "same-origin",
+                headers: {
+                    "content-type": "Application/json",
+                },
+                method: "POST",
+                body: JSON.stringify({
+                    mail: emailInput.value
+                })
+            }).then(async res => {
+                const body = await res.json()
+
+
+                // emailInput.value = ""
+
+                if (res.ok) {
+                    forgetForm.style.display = "none";
+                    backToLogin.style.display = "flex";
+                    backToLogin.style.flexDirection="column"
+                    backToLogin.style.alignItems="center"
+                } else {
+                    errorHolder.innerText = body.msg
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

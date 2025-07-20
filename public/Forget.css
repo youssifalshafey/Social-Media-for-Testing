@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=DynaPuff:wght@400..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    background: linear-gradient(to top, #000000, rgb(35 38 41 / 67%)), url(imgs/2148578076.jpg) no-repeat center center fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to top , #000000, #9423126c),
+    url('imgs/ai (14).jpg') no-repeat center center  fixed;
+
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 3rem ;
+    text-align: center;
+    border: .1rem solid rgba(255, 255, 255, 0.692);;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #2b4e1f;
+}
+
+input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+label {
+    display: none;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background: #fff;
+    color: #2b4e1f;
+}
+
+.btn-primary:hover {
+    background: #e6e6e6;
+}
+
+.btn-secondary {
+    background: #e3f2fd;
+    color: #2b4e1f;
+}
+
+.btn-secondary:hover {
+    background: #c5e1a5;
+    color: #fff;
+}
+
+.register-link p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.register-link a {
+    color: #e4e4e4;
+    font-weight: bold;
+    /* text-decoration: none; */
+    text-decoration: underline;
+
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+
+}
+
+/* Success Box */
+.success-box {
+    display: none;
+    padding: 20px;
+}
+
+.success-box h1 {
+    color: #4d9a33;
+    margin-bottom: 10px;
+}
+
+.success-box p {
+    font-size: 14px;
+    color: #fffafa;
+    margin-bottom: 20px;
+}
+button {
+    border: none;
+    width: 140px;
+    height: 50px;
+    color: #fff;
+    z-index: 1;
+    display: flex
+;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    /* padding-top: 26px; */
+    align-items: center;
+  }
+  
+  button p {
+    margin: 0 auto;
+    align-self: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+  
+  /* button:hover::after {
+    clip-path: polygon(
+      0 30%,
+      9% 34%,
+      7% 39%,
+      11% 43%,
+      13% 33%,
+      17% 30%,
+      24% 34%,
+      25% 35%,
+      30% 31%,
+      30% 38%,
+      39% 33%,
+      35% 43%,
+      43% 45%,
+      55% 46%,
+      65% 74%,
+      67% 66%,
+      81% 57%,
+      75% 82%,
+      81% 86%,
+      83% 88%,
+      88% 91%,
+      90% 94%,
+      94% 96%,
+      98% 98%,
+      100% 100%,
+      82% 100%,
+      0 100%
+    );
+    height: 80%;
+  }
+  
+  button:hover::before {
+    clip-path: polygon(
+      0 30%,
+      9% 34%,
+      7% 39%,
+      11% 43%,
+      13% 33%,
+      17% 30%,
+      24% 34%,
+      25% 35%,
+      30% 31%,
+      30% 38%,
+      39% 33%,
+      35% 43%,
+      43% 45%,
+      55% 46%,
+      65% 74%,
+      67% 66%,
+      81% 57%,
+      75% 82%,
+      81% 86%,
+      83% 88%,
+      88% 91%,
+      90% 94%,
+      94% 96%,
+      98% 98%,
+      100% 100%,
+      82% 100%,
+      0 100%
+    );
+    height: 80%;
+  } */
+  
+
+  body h1,  body h2,  body p,  body button,   body label , body input{
+    font-family: "Baloo Paaji 2", sans-serif;
+
+  }
+  .register-link p{
+    font-size: 1.2rem;
+  }
+  body input{
+    color: rgba(255, 255, 255, 0.692);;;
+    background-color: inherit;
+    border: .1rem solid rgba(255, 255, 255, 0.692) !important;;
+border-radius: .8rem !important;
+color: #fff;
+text-align: center;
+
+}
+ .btn-seen{
+    background-color: inherit !important;
+    border: .1rem solid rgba(255, 255, 255, 0.692);;
+    border-radius: .5rem !important;
+    transition: 500ms;
+
+}
+.btn-seen:hover{
+    background-color:darkslategray !important;;
+
+}
+
+.posaa{
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 3rem;
+}
+.b{
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.692);;;
+    position: absolute;
+    bottom: -17%;
+    left: 0;
+    width: 100%;
+border-radius: 100%;  
+
+}

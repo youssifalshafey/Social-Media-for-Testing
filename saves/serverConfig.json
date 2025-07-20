@@ -1,0 +1,6 @@
+{
+    "maxClass": 5,
+    "protocol": "http",
+    "host": "localhost",
+    "port": "5000"
+}

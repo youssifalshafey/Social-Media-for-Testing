@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social media</title>
+  <link rel="stylesheet" href="darkStyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="lib/New folder/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/fontawesome-free-6.4.2-web/css/all.min.css">
+<link rel="stylesheet" href="editeIndex.css">
+  <link rel="stylesheet" href="lib/font/Baloo_Paaji_2/BalooPaaji2-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="lib/font/DynaPuff/DynaPuff-VariableFont_wdth,wght.ttf">
+  <link rel="stylesheet" href="lib/font/Saira/Saira-VariableFont_wdth,wght.ttf">
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    video {
+        width: 330px;
+        border-radius: 8px;
+    }
+    .first{
+      width: 85%;
+    margin-top: 5%;
+    }
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+  <nav id="bn" class="navbar navbar-expand-lg bg-body-tertiary fbrtg dddd">
+    <div class="container-fluid">
+      <a class="col-3 col-lg-2 col-xl-3 " href="/">
+        <h2 class="header-name">
+        
+    stg
+
+        </h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="toty" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse hjh " id="navbarNav">
+        <ul class="navbar-nav col-7  ">
+          <li class="nav-item ">
+            <a class="nav-link " aria-current="page" href="/home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/video">video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/school">school</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/team">team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">login</a>
+          </li>
+      
+
+        </ul>
+</nav>
+
+
+<h2>videos list</h2>
+<div class="video-box">
+  <video controls preload="metadata" class="first">
+      <source src="imgs/0Z8A0039.MP4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+  </video>
+</div>
+<div class="video-container">
+    <div class="video-box">
+        <video preload="metadata">
+            <source src="imgs/0Z8A0039.MP4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+    <div class="video-box">
+        <video preload="metadata">
+            <source src="imgs/0Z8A9975.MP4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+    <div class="video-box">
+        <video preload="metadata">
+            <source src="imgs/0Z8A9972.MP4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+    <div class="video-box">
+        <video preload="metadata">
+            <source src="imgs/0Z8A9953.MP4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+    <div class="video-box">
+        <video preload="metadata">
+            <source src="imgs/0Z8A9922.MP4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+    <div class="video-box">
+        <video preload="metadata">
+            <source src="imgs/0Z8A9906.MP4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+</div>
+
+
+<!-- <script src="./main.js"></script> -->
+
+<script>
+const CACHE_NAME = "video-cache";
+const VIDEO_URLS = [
+    "/imgs/0Z8A0039.MP4",
+    "/imgs/0Z8A9975.MP4"
+];
+
+self.addEventListener("install", event => {
+    event.waitUntil(
+        caches.open(CACHE_NAME).then(cache => {
+            return cache.addAll(VIDEO_URLS);
+        })
+    );
+});
+
+self.addEventListener("fetch", event => {
+    event.respondWith(
+        caches.match(event.request).then(response => {
+            return response || fetch(event.request);
+        })
+    );
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    let videos = document.querySelectorAll("video");
+
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let video = entry.target;
+                if (!video.src) {
+                    let source = video.querySelector("source");
+                    video.src = source.getAttribute("src"); 
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    videos.forEach(video => observer.observe(video));
+});
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+      const mainVideo = document.querySelector(".first");
+      const videoBoxes = document.querySelectorAll(".video-box video");
+      
+      videoBoxes.forEach(video => {
+          video.addEventListener("click", function() {
+              mainVideo.src = this.querySelector("source").src;
+              mainVideo.play();
+          });
+      });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js  "></script>
+<!-- <script src="lib/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+  <script src="lib/New folder/lib/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+
+</body>
+</html>
